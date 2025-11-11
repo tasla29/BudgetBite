@@ -29,13 +29,18 @@ function Navbar() {
           }, "Recepti"),
           
           React.createElement(Link, { 
-            to: "/journal", 
+            to: "/moodjournal", 
             className: `px-3 py-2 rounded hover:bg-gray-700 ${isActive("/journal")}` 
           }, "Dnevnik"),
+          
+          React.createElement(Link, { 
+            to: "/reflectionpage", 
+            className: `px-3 py-2 rounded hover:bg-gray-700 ${isActive("/reflection")}` 
+          }, "Refleksija"),
 
           React.createElement(Link, { 
             to: "/profile", 
-            className: `px-3 py-2 rounded hover:bg-gray-700 ${isActive("/journal")}` 
+            className: `px-3 py-2 rounded hover:bg-gray-700 ${isActive("/profile")}` 
           }, "Moj profil")
         ),
         

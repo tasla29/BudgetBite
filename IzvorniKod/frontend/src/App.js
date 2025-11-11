@@ -3,6 +3,8 @@ import Home from "./pages/Home";
 import LoginPage from "./pages/LoginPage";
 import Creator from "./pages/Creator";
 import Dashboard from "./pages/DashBoard";
+import MoodJournal from "./pages/MoodJournal";
+import ReflectionPage from "./pages/ReflectionPage";
 import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
@@ -16,7 +18,8 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/recipes" element={<div>Recepti</div>} />
         <Route path="/profile" element={<div>Moj profil</div>} />
-        <Route path="/journal" element={<div>Dnevnik</div>}></Route>
+        <Route path="/moodjournal" element={<MoodJournal />} />
+        <Route path="/reflectionpage" element={<ReflectionPage />} />
       </Routes>
     </Router>
   );
